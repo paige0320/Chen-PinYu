@@ -1,0 +1,429 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  
+}
+
+section
+{
+position: fixed;
+top: 0%;
+left: 15%;
+width: 60%;
+height: 80%;
+background: repeating-linear-gradient(#111,#111 50%,#fff 50%,
+#fff);
+background-size: 5px 5px;
+filter: url(#noise);
+opacity: 1;
+}
+
+.svg{
+    width: 0;
+    height: 0;
+}
+
+.GLi{
+  /* background: url("GLITCH.png"); */
+  background-size: auto 100vh;
+  background-position: center top;
+  background-repeat: no-repeat; 
+  top: 0%;
+  left: 50%;
+  height: 100vh;
+  width: 93.7vh;
+  transform: translate(-50%);
+  position: fixed;
+  overflow:hidden;
+
+}
+
+.GLITCH{
+  position: absolute;
+  left: 37.5%;
+  top: 11.5%;
+  height: 30%;
+  width: 25%;
+}
+.video{
+  position: fixed;
+  left: 27.25%;
+  top: 10.5%;
+  height: 31%;
+  width: 44.5%;
+  opacity: 0;
+}
+.workvideo{
+  position: fixed;
+  left: 26.5%;
+  top: 9.75%;
+  height: 33%;
+  width: 45.5%;
+  opacity: 0;
+}
+
+/* .bg{
+  height: 100%;
+} */
+
+.bg {
+  /* background: url("all.png");  */
+  background: url("all\ bg.png");
+  background-size: auto 100vh;
+  background-position: center top;
+  background-repeat: no-repeat; 
+  top: 0%;
+  left: 50%;
+  height: 100vh;
+  width: 93.7vh;
+  transform: translate(-50%);
+  position: fixed;
+  overflow:hidden;
+}
+
+.monhead{
+  position: absolute;
+  left:15%;
+  top: 72.5%;
+  height: 10%;
+  width: auto;
+}
+.drinkimg {
+  position: absolute;
+  left: 4%;
+  top: 52%;
+  height: auto;
+  width: 17%;
+}
+.drink:hover > .drinkimg {
+  transform: rotate(-10deg);
+}
+
+.drink:hover > .monhead {
+  transform: translateY(-5%);
+  transition-duration: 0.5s;
+}
+
+.wordimg{
+  position: absolute;
+  size: auto 100vh;
+  left: 32.5%;
+  top: 17%;
+  height: 19.75%;
+  width: auto;
+  opacity: 1 ;
+}
+
+.monkeys{
+  position: absolute;
+  size: auto 100vh;
+  left: 27%;
+  top: 11%;
+  height: auto;
+  width: 44.5%;
+  opacity:1 ;
+}
+
+.handimg{
+  position: absolute;
+  right: 0%;
+  top: 81.5%;
+  height: 16%;
+  width: auto;
+  -webkit-animation: ani1 4s infinite;
+          animation: ani1 4s infinite;
+  /* -webkit-animation-timing-function: steps(1000); */
+          /* animation-timing-function: steps(1000); */
+}
+
+@-webkit-keyframes ani1 {
+  0% {
+    top: 80%;
+  }
+
+  30%{
+    top:73%;
+    transform: translateX(10%) translateY(10%);
+  }
+  70%{
+    top:75%;
+    transform: translateX(0%) translateY(-5%);
+  }
+
+  100% {
+    top: 80%;
+  }
+}
+
+@keyframes ani1 {
+  0% {
+    top: 80%;
+  }
+  30%{
+    top:73%;
+    transform: translateX(10%) translateY(10%);
+  }
+  70%{
+    top:75%;
+    transform: translateX(0%) translateY(-5%);
+  }
+  100% {
+    top: 80%;
+  }
+}
+
+.namecardBig{
+  position: absolute;
+  left:8.75%;
+  top: 88.25%;
+  height: 9.5%;
+  width: auto;
+}
+
+.namecardBig:hover { 
+  opacity:0 ;
+}
+
+
+.namecardS {
+  position: absolute;
+  left:22.75%;
+  top: 58.5%;
+  height: auto;
+  width: 10%;
+}
+.namecardS:hover { 
+  opacity:0 ;
+}
+
+.ballimg{
+  position: absolute;
+  left:3%;
+  top: 87%;
+  height: auto;
+  width: 4.75%;
+}
+
+.ballimg:hover{
+  transform: translateY(-35%);
+  transition-duration: 0.5s;
+}
+
+
+/* .button:active {
+  width: auto;
+  height: auto;
+  background: url("buttonsmallup.png");
+} */
+
+/* .buttonimg{ 
+  display: none;
+  position: absolute;
+  left:45.33%;
+  top: 44.25%;
+  width: 33.15%;
+  height: auto;
+  overflow:hidden;
+}  */
+
+.floppydiskimg{
+  position: absolute;
+  left:12%;
+  top: 116%;
+  width: 76%;
+  height: auto;
+  /* -webkit-animation: ani5 4s  infinite; */
+  /* animation: ani5 3s  ; */
+  /* animation-play-state: paused; */
+  /* animation-fill-mode: forwards; */
+  /* overflow:hidden; */
+  transition: top 3s 0s;
+}
+.shadow{
+  position: absolute;
+  left:12%;
+  top: 135%;
+  width: 70%;
+  height: auto;
+  /* -webkit-animation: ani5 4s  infinite; */
+  /* animation: ani6 3s  ;
+  animation-play-state: paused;
+  animation-fill-mode: forwards; */
+  /* overflow:hidden; */
+  transition: top 3s 0s;
+}
+
+
+/* @keyframes ani5 {
+  20% {
+    top: 116%;
+  }
+  100% {
+    top: 43%;
+  }
+} */
+
+/* @keyframes ani6 {
+  20% {
+    top: 135%;
+  }
+  100% {
+    top: 30%;
+  }
+} */
+
+.buttonimg{
+  position: absolute;
+  left:44%;
+  top: 38%;
+  width: 33.15%;
+  height: 10%;
+}
+
+ .buttonupperspaceimg{ 
+  /* display: none; */
+  position: absolute;
+  left:0%;
+  top: 27%;
+  width: 104%;
+  height: auto;
+  
+} 
+.buttonSimg{
+  position: absolute;
+  left:9%;
+  top: 89%;
+  width: 15%;
+  height: auto;
+}
+
+.buttondown{
+  position: absolute;
+  left:9.75%;
+  top: 91%;
+  width:12%;
+  height:11%;
+  background-color:#868683; 
+  opacity:1 ;
+  
+}
+.buttondown:hover { 
+  opacity:0 ;
+}
+
+.lightup{
+  position: absolute;
+  left:27.5%;
+  top: 93%;
+  width: 8%;
+  height: 9.75%;
+  background-color:#4AD616; 
+  opacity:0 ;
+}
+
+.pinkpaige{
+  position: absolute;
+  height: auto;
+  width: 35%;
+  right: 32.5%;
+  top: 35%;
+  /* -webkit-animation: ani2 2s ; */
+  animation: ani2 2s linear forwards;
+  /* animation: ani2 2s linear; */
+  /* -webkit-animation-timing-function: steps(1000); */
+          /* animation-timing-function: steps(1000); */
+}
+
+.pinkpaige > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* @-webkit-keyframes ani2 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  30% {
+    transform: rotate(324deg) scale(1);
+  }
+  50% {
+    transform: rotate(540deg) scale(0.5);
+  }
+  70% {
+    transform: rotate(756deg) scale(0.25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(1080deg) scale(0);
+  }
+}  */
+
+@keyframes ani2 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  30% {
+    transform: rotate(324deg) scale(1);
+  }
+  50% {
+    transform: rotate(540deg) scale(0.5);
+  }
+  70% {
+    transform: rotate(756deg) scale(0.25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(1080deg) scale(0);
+  }
+}
+
+.loadBGimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: ani3 2s linear forwards;
+}
+
+.loadBGimg > img {  
+  width: 100%;
+  height: 100%;
+}  
+
+@keyframes ani3 {
+  70% {
+    transform:scale(4);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+
+.circle{
+  position: absolute;
+  height: auto;
+  width: 35%;
+  right: 32.5%;
+  top: 35%;
+  /* -webkit-animation: ani2 2s ; */
+  animation: ani4 2s linear forwards;
+  /* -webkit-animation-timing-function: steps(1000); */
+          /* animation-timing-function: steps(1000); */
+}
+
+.circle > img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ani4 {
+  0% {
+    transform:scale(10);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
