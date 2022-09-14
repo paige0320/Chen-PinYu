@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
 
 
     fip.addEventListener('click', function() {
-        
+        playVideo();
         async function playVideo() {
           try {
             await workV.play();
@@ -91,6 +91,7 @@ window.addEventListener("load", function() {
         fip.style.top = "43%"
         shadow.style.top = "30%"
         // shadow.style['animation-play-state'] = 'running'
+        
         setTimeout(function() {
             but.style['opacity'] = '0'
             light.style['opacity'] = '1'
@@ -101,7 +102,6 @@ window.addEventListener("load", function() {
             pauseVideo2();
             pauseAudio();
         }, 2000)
-        playVideo();
     })
 
     but.addEventListener('click', function() {
