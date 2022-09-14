@@ -78,6 +78,15 @@ window.addEventListener("load", function() {
 
 
     fip.addEventListener('click', function() {
+        
+        async function playVideo() {
+          try {
+            await workV.play();
+            fip.classList.add("playing");
+          } catch (err) {
+            fip.classList.remove("playing");
+          }
+        }
         // fip.style['animation-play-state'] = 'running'
         fip.style.top = "43%"
         shadow.style.top = "30%"
@@ -92,15 +101,10 @@ window.addEventListener("load", function() {
             pauseVideo2();
             pauseAudio();
         }, 2000)
+        playVideo();
     })
 
     but.addEventListener('click', function() {
-        // fip.style['animation-fill-mode']='none'
-        // shadow.style['animation-fill-mode']='none'
-        // fip.style['animation-play-state'] = 'running'
-        // shadow.style['animation-play-state'] = 'running'
-        // but.style['animation-direction'] = 'reverse'
-        // shadow.style['animation-direction'] = 'reverse'
         fip.style.top = "116%"
         shadow.style.top = "135%"
         setTimeout(function() {
@@ -121,6 +125,15 @@ window.addEventListener("load", function() {
     }); 
 
     PCard.addEventListener('click', function() {
+        async function playVideo2() {
+            try {
+              await myV.play();
+              PCard.classList.add("playing");
+            } catch (err) {
+              PCard.classList.remove("playing");
+            }
+          }
+
         console.log('pcard')
         fip.style.top = "116%"
         shadow.style.top = "135%"
@@ -136,7 +149,7 @@ window.addEventListener("load", function() {
             playVideo2()
             pauseAudio();
         }, 1000)
-        // video.play();
+        playVideo2();
     }); 
     myV.addEventListener('ended', function() {
         word.style['opacity'] = '1'

@@ -11,6 +11,12 @@
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <!-- <script src="https://pixijs.download/release/pixi.js"></script> -->
     <script src="./action.js"></script>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      var vConsole = new window.VConsole();
+    </script>
+    
 </head>
 <body>
     <!-- partial:index.partial.html -->
@@ -42,10 +48,10 @@
 
             <!-- <img class='G'src="GLITCH.png"> -->
             <div class="webvideo">
-                <video class="video" src="web.mp4"></video>
+                <video class="video" src="web.mp4" controls playsinline></video>
             </div>
             <div class="work">
-                <video class="workvideo" src="animal.mp4"></video>
+                <video class="workvideo" src="animal.mp4" controls playsinline></video>
             </div>
         </div>
         <div class="bg">
